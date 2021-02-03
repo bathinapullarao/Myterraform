@@ -17,9 +17,9 @@ variable "credentials_file_path" {
 
 variable "gcm" {
   default = {
-   "1"    = "dev-gcm-web"
-   "2"    = "dev-gcm-app"
-   "3"    = "dev-gcm-db"
+   "1"    = "dev-mcm-web"
+   "2"    = "dev-mcm-app"
+   "3"    = "dev-mcm-db"
  }
 }
 
