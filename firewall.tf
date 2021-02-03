@@ -1,6 +1,6 @@
 resource "google_compute_firewall" "allow-mgmt" {
   name    = "allow-mgmt"
-  network = "${google_compute_network.gcm_network.self_link}"
+  network = "${google_compute_network.mcm_network.self_link}"
 
   allow {
     protocol = "tcp"
@@ -13,7 +13,7 @@ resource "google_compute_firewall" "allow-mgmt" {
 // Adding GCP Firewall Rules for INBOUND
 resource "google_compute_firewall" "allow-inbound" {
   name    = "allow-inbound"
-  network = "${google_compute_network.gcm_network.self_link}"
+  network = "${google_compute_network.mcm_network.self_link}"
 
   allow {
     protocol = "tcp"
@@ -26,7 +26,7 @@ resource "google_compute_firewall" "allow-inbound" {
 // Adding GCP Firewall Rules for OUTBOUND
 resource "google_compute_firewall" "allow-outbound" {
   name    = "allow-outbound"
-  network = "${google_compute_network.gcm_network.self_link}"
+  network = "${google_compute_network.mcm_network.self_link}"
 
   allow {
     protocol = "all"
