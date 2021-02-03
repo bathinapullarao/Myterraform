@@ -19,7 +19,7 @@ resource "google_compute_instance" "mcm_web" {
 }
 
 resource "google_compute_instance" "mcm_webap" {
-  name         = "${var.gcm.2}"
+  name         = "${var.mcm.2}"
   machine_type = "${var.vm_type["small"]}"
  boot_disk {
     initialize_params {
