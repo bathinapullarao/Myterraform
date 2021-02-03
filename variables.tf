@@ -17,9 +17,9 @@ variable "credentials_file_path" {
 
 variable "gcm" {
   default = {
-   "1"    = "dev-gcm-web31"
-   "2"    = "dev-gcm-webap31"
-   "3"    = "dev-gcm-db31"
+   "1"    = "dev-gcm-web"
+   "2"    = "dev-gcm-app"
+   "3"    = "dev-gcm-db"
  }
 }
 
@@ -29,7 +29,7 @@ variable "subnetwork-region" {
 }
 
 variable "network" {
-  default = "gcm-network"
+  default = "mcm-network"
 }
 
 variable "vm_type" {
