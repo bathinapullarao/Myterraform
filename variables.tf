@@ -15,7 +15,7 @@ variable "credentials_file_path" {
   default     = "/usr/local/terraform/demo/terrafrom-e0ebf51e8988.json"
 }
 
-variable "gcm" {
+variable "mcm" {
   default = {
    "1"    = "dev-mcm-web"
    "2"    = "dev-mcm-app"
